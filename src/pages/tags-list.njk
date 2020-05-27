@@ -1,0 +1,11 @@
+---
+title: "Tags"
+description: "Browse posts by tag"
+permalink: /tags/
+date: 2020-05-03
+---
+
+{% for tag in collections.tagList %}
+  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+  <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+{% endfor %}
