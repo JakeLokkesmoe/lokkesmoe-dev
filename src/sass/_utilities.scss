@@ -1,8 +1,8 @@
-.tdbc-content-maxlength {
+.jlok-content-maxlength {
   max-width: 80ch;
 }
 
-.tdbc-anchor {
+.jlok-anchor {
   display: inline-block;
   margin-left: 0.25em;
   transition: 180ms opacity ease-in-out;
@@ -15,10 +15,10 @@
   }
 }
 
-$tdbc-alignments: left, center, right !default;
+$jlok-alignments: left, center, right !default;
 
-@each $alignment in $tdbc-alignments {
-  .tdbc-text-align--#{$alignment} {
+@each $alignment in $jlok-alignments {
+  .jlok-text-align--#{$alignment} {
     text-align: #{$alignment};
 
     @if ($alignment == "center") {
@@ -29,39 +29,47 @@ $tdbc-alignments: left, center, right !default;
   }
 }
 
-@each $key in $tdbc-background-colors {
-  .tdbc-background--#{$key} {
-    background-color: tdbc-color($key);
+@each $key in $jlok-background-colors {
+  .jlok-background--#{$key} {
+    background-color: jlok-color($key);
   }
 }
 
-@each $key in $tdbc-ink-colors {
-  .tdbc-ink--#{$key},
-  a.tdbc-ink--#{$key} {
-    color: tdbc-color(#{$key});
+@each $key in $jlok-ink-colors {
+  .jlok-ink--#{$key},
+  a.jlok-ink--#{$key} {
+    color: jlok-color(#{$key});
   }
 
-  .tdbc-ink--#{$key} > a:not(.tdbc-button) {
+  .jlok-ink--#{$key} > a:not(.jlok-button) {
     color: inherit;
   }
 }
 
-.tdbc-mx-auto {
+.jlok-mx-auto {
   margin-right: auto;
   margin-left: auto;
 }
 
-@each $key, $unit in $tdbc-spacing {
-  .tdbc-my-#{$key} {
+@each $key, $unit in $jlok-spacing {
+  .jlok-my-#{$key} {
     margin-top: $unit;
     margin-bottom: $unit;
   }
 
-  .tdbc-mt-#{$key} {
+  .jlok-mt-#{$key} {
     margin-top: $unit;
+  }
+
+  .jlok-ml-#{$key} {
+    margin-left: $unit;
+  }
+
+  .jlok-mr-#{$key} {
+    margin-right: $unit;
   }
 }
 
-.tdbc-mb-none {
+.jlok-mb-none {
   margin-bottom: 0;
 }

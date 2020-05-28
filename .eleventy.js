@@ -76,7 +76,7 @@ module.exports = function (eleventyConfig) {
     html: true,
   }).use(markdownItAnchor, {
     permalink: true,
-    permalinkClass: "tdbc-anchor",
+    permalinkClass: "jlok-anchor",
     permalinkSymbol: "#",
     permalinkSpace: false,
     level: [1, 2, 3],

@@ -1,3 +1,4 @@
+<!--
 <ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
 {% for post in postslist | reverse %}
   <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
@@ -12,3 +13,17 @@
   </li>
 {% endfor %}
 </ol>
+-->
+
+<div class="jlok-section">
+  <ul class="jlok-column-container">
+    {%- for post in postslist | reverse -%}
+    <li class="jlok-card">
+      <div class="jlok-card__content">
+        <a href="{{ post.url }}" class="jlok-card__title">{{ post.data.title }}</a>
+        <p>{{ post.data.description }}</p>
+      </div>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
