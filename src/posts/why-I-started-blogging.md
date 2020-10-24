@@ -2,6 +2,8 @@
 title: Why I Started Blogging
 description: Personal blogs seem to be making a comeback these days. Especially among developers. I've never written a blog before, so I decided this might be a good time to join in.
 date: 2020-05-27
+tags:
+  - personal
 ---
 
 The idea of creating a personal blog has often crossed my mind, but usually in an abstract sort of way. There are many aspects of owning a blog that have appealed to me.
