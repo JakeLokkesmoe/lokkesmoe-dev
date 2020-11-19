@@ -37,7 +37,7 @@
     "dotenv": "^8.2.0",
     "emoji-regex": "^9.2.0",
     "markdown-it": "^11.0.1",
-    "markdown-it-anchor": "^6.0.0",
+    "markdown-it-anchor": "^6.0.1",
     "node-sass": "^4.11.0",
     "luxon": "^1.25.0",
     "postcss-cli": "^7.1.2",
