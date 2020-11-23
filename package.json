@@ -38,7 +38,7 @@
     "emoji-regex": "^9.2.0",
     "markdown-it": "^11.0.1",
     "markdown-it-anchor": "^6.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^5.0.0",
     "luxon": "^1.25.0",
     "postcss-cli": "^7.1.2",
     "puppeteer": "^5.5.0",
